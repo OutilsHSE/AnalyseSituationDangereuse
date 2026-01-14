@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analyse accident</title>
+  <link rel="stylesheet" href="global.css">
+  <script src="global.js"></script>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div id="page1">
+    <div class="container">
+      <img class="logo" src="CDES_Logo.png" alt="">
+      <h1> ANALYSE DES SITUATIONS DANGEREUSES</h1>
+    </div>
+    <div class="top-fields">
+      <label>Chantier:<input type="text" id="chantier" placeholder="Nom du chantier"></label>
+      <label>Date:<input type="date" id="accident-date" value=""></label>
+      <label> Situation dangereuse remontée par :<input type="text" id="collaborateur"></label>
+    </div>
+
+    <fieldset>
+      <legend> Nature de l'incident :</legend>
+      <div id="nature-accident">
+        <select id="nature">
+          <option value="securite">Sécurité</option>
+          <option value="sante">Santé</option>
+          <option value="environnement">Environnement</option>
+          <option value="industriel"> Risques industriels</option>
+        </select>
+      </div>
+      <div>
+        <h4> Description factuelle de la situation dangereuse observée ou déclarée (Qui ? Quand? Quoi ? Où? Comment ?)
+        </h4>
+        <textarea class="resume"></textarea>
+      </div>
+
+      <div id="photo">
+        <input type="file" id="photo-input" placeholder="photo" accept="image/* .png" class="no-print"
+          multiple>
+        <div id="photo-container"></div>
+      </div>
+
+      <div style="margin-top: 10px;">
+        <label>Danger principal :<input type="text" id="danger"></label>
+      </div>
+      <div style="margin-top: 10px;">
+        <label style="margin-top: 10px;">Evenement redouté :<input type="text" id="evenement-redoute" value=""></label>
+      </div>
+      <div class="question">
+        <h4> GRAVITE POTENTIELLE DE L’INCIDENT :</h4>
+        <select class="gr avite" id="gravite-potentielle-select">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <br>
+      <div class="question">
+        <h4> EN LIEN AVEC UNE (OU PLUSIEURS) REGLE(S) QUI SAUVENT?</h4>
+        <div class="custom-select" id="customSelect">
+          <div class="selected-option-img" id="selectedOptionImg">
+            <span>Non</span>
+          </div>
+          <div class="options-img" id="optionsListImg">
+            <div class="option-img" data-value="non">
+              <span>Non</span>
+            </div>
+            <div class="option-img">
+              <img src="regle1.png" alt="1">
+            </div>
+            <div class="option-img">
+              <img src="regle2.png" alt="2">
+            </div>
+            <div class="option-img">
+              <img src="regle3.png" alt="3">
+            </div>
+            <div class="option-img">
+              <img src="regle4.png" alt="4">
+            </div>
+            <div class="option-img">
+              <img src="regle5.png" alt="5">
+            </div>
+            <div class="option-img">
+              <img src="regle6.png" alt="6">
+            </div>
+            <div class="option-img">
+              <img src="regle7.png" alt="7">
+            </div>
+            <div class="option-img">
+              <img src="regle8.png" alt="8">
+            </div>
+            <div class="option-img">
+              <img src="regle9.png" alt="9">
+            </div>
+            <div class="option-img">
+              <img src="regle10.png" alt="10">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="haut-potentiel" style="display: none;">
+        <h4 style="color: red;">Evénement haut potentiel de gravité</h4>
+      </div>
+  </div>
+  </fieldset>
+  <button class="next-button" onclick="redirectToPage()">Suivant</button>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" src="info-cotation.png">
+  </div>
+
+  <script src="index.js">
+  </script>
+</body>
+
+</html>
