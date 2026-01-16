@@ -6,7 +6,8 @@
     height: 50px;
     border: 1px solid #ccc;
   }
-   td {
+
+  td {
     width: 300px;
     height: 100px;
     border: 1px solid #ccc;
@@ -27,3 +28,37 @@
     padding: 8px;
     box-sizing: border-box;
   }
+/* ===== ANALYSE COMPLEMENTAIRE HIPO ===== */
+
+.hipo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hipo-row {
+    display: flex;
+    gap: 40px;
+}
+
+.hipo-row .question {
+    flex: 2;
+}
+
+.hipo-block {
+    width: 100%;
+}
+
+.hipo textarea {
+    width: 100%;
+    min-height: 90px;
+    margin-top: 8px;
+}
+
+.inline-options {
+    margin-bottom: 8px;
+}
+
+.options label {
+    display: inline-block;
+}

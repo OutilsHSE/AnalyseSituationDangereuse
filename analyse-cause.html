@@ -19,10 +19,10 @@
     <div id="page2">
         <h2> ANALYSES DES CAUSES</h2>
         <fieldset>
-                  <div>
-        <h4> Qu'est ce qui a permis d'éviter l'accident ?</h4>
-        <textarea class="resume"></textarea>
-      </div>
+            <div>
+                <h4> Qu'est ce qui a permis d'éviter l'accident ?</h4>
+                <textarea class="resume"></textarea>
+            </div>
             <div>
                 <label>Méthode d'analyse choisie:</label>
                 <label>
@@ -43,160 +43,116 @@
                 <textarea></textarea>
             </div>
             <div id="arbre_des_causes" style="display: none;">
-                <input type="file" id="photo-input" placeholder="Arbre des causes" accept="image/* .png" class="no-print" multiple>
+                <input type="file" id="photo-input" placeholder="Arbre des causes" accept="image/* .png"
+                    class="no-print" multiple>
                 <div id="photo-container"></div>
             </div>
         </fieldset>
         <div style="display: flex;">
-            <h2> CAUSES PROFONDES :  </h2>
-          <button id="openModalBtnCause" class="info"  style="margin-top: 5px;">!</button>
+            <h2> CAUSES PROFONDES : </h2>
+            <button id="openModalBtnCause" class="info" style="margin-top: 5px;">!</button>
         </div>
         <table>
             <thead>
-            <th>Technique</th>
-            <th>Organisationnelle</th>
-            <th>Humaine</th>
+                <th>Technique</th>
+                <th>Organisationnelle</th>
+                <th>Humaine</th>
             </thead>
             <tbody>
-            <td> <textarea type="text" class="cause-input"></textarea></td>
-            <td> <textarea type="text" class="cause-input"></textarea></td>
-            <td> <textarea type="text" class="cause-input"></textarea></td>
+                <td> <textarea type="text" class="cause-input"></textarea></td>
+                <td> <textarea type="text" class="cause-input"></textarea></td>
+                <td> <textarea type="text" class="cause-input"></textarea></td>
             </tbody>
         </table>
-                       <div id="analyse_approfondie" style="display: none;">
-                <h4 style="text-decoration:underline;"> ANALYSE DES FACTEURS HUMAINS ET ORGANISATIONNELS :</h4>
-                <fieldset>
-                    <div class="description-accident">
-                        <span>1 - Mode opératoire (tâches, accès, circulation…)</span>
-                        <textarea></textarea>
-                    </div>
+        <div id="analyse_approfondie" style="display: none;">
+            <h3 style="text-decoration:underline;"> ANALYSE COMPLEMENTAIRE : EVENEMENT HIPO </h4>
+<fieldset class="hipo">
 
-                    <div class="description-accident">
-                        <span>2 - Moyens humains mis en place (le jour de l’événement) </span>
-                        <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Ancienneté des victimes dans leurs fonctions / formations et qualifications / culture HSE
-                            des collaborateurs :</label>
-                         <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>EPI requis / utilisés :</label>
-                         <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Autres moyens de protections requis / utilisés :</label>
-                         <textarea></textarea>
-                    </div>
-
-                    <div class="description-accident page-section page-break">
-                    <div class="description-accident" style="padding-top: 5px;">
-                        <span>3 – Moyens organisationnels mis en place (le jour de l’événement)</span>
-                        <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>SSE (PPSPS / PDP) :</label>
-                         <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Analyse des risques en amont (Risque intégré dans le DU) :</label>
-                         <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Permis de travail spécifique :</label>
-                         <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Vigiminutes réalisées :</label>
-                         <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Accueils SSE des intervenants :</label>
-                        <textarea></textarea>
-                    </div>
-                </div>
-                    <div class="description-accident" style="padding-top: 5px;">
-                        <span>4 – Moyens techniques mis en place (le jour de l’événement)</span>
-                        <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Équipements soumis à VGP :</label>
-                         <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Âge des équipements concernés :</label>
-                        <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Dysfonctionnements constatés :
-
-                        </label>
-                        <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Réparations effectuées :</label>
-                        <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Incidents antérieurs :</label>
-                        <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Maintenance réalisée récemment :</label>
-                        <textarea></textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Modification des processus ou de la procédure d’intervention :</label>
-                       <textarea></textarea>
-                    </div>
-                </fieldset>
-                </div>  
-        </div>
-        <button class="next-button" onclick="redirectToPage()">Suivant</button>
-
-        <!-- Modal -->
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <div class="modal-content">
-                <p> La <span style="font-weight:bold;"> méthodologie des 5 Pourquoi </span> est une technique simple et
-                    efficace d’analyse des causes profondes d’un problème. Elle consiste à poser la question "Pourquoi
-                    ?" de manière répétée (généralement cinq fois) jusqu’à remonter à la cause racine de l’incident ou
-                    de la défaillance.
-                    <span style="font-weight:bold;"> Objectif :</span> <br>
-                    Identifier <span style="font-weight:bold;"> la vraie origine d’un problème </span> pour éviter de
-                    traiter uniquement ses symptômes.
-                    <span style="font-weight:bold;"> Principe : </span> <br>
-                    À chaque réponse, on repose la question "Pourquoi ?", en se basant sur la réponse précédente.
-                    Cela permet de <span style="font-weight:bold;"> creuser progressivement </span> jusqu’à la source du
-                    problème.
-                </p>
+    <!-- LIGNE 1 : QUESTIONS 1 ET 2 -->
+    <div class="hipo-row">
+        <div class="question">
+            <h4>1. L’absence d’accident est-elle due à :</h4>
+            <div class="options">
+                <label><input type="checkbox" name="q1"> Barrière maîtrisée</label>
+                <label><input type="checkbox" name="q1"> Action humaine volontaire</label>
+                <label><input type="checkbox" name="q1"> Circonstance favorable (chance)</label>
             </div>
         </div>
-                <div id="myModalCause" class="modal">
-            <span class="close-cause">&times;</span>
-            <div class="modal-content">
-                <p> Suite à l’analyse, dressez la liste des causes profondes qui ont contribuées à la survenue de
-l’événement. Les causes profondes sont les échecs fondamentaux qui, lorsqu’elles sont
-correctement traitées, empêcheront la répétition de l’incident.
-                </p>
-            </div>
 
-        
+        <div class="question">
+            <h4>2. L’absence d’accident est-elle due à :</h4>
+            <div class="options">
+                <label><input type="checkbox" name="q2"> Barrière maîtrisée</label>
+                <label><input type="checkbox" name="q2"> Action humaine volontaire</label>
+                <label><input type="checkbox" name="q2"> Circonstance favorable (chance)</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUESTION 3 -->
+    <div class="question hipo-block">
+        <h4>3. Cette situation pourrait-elle se reproduire ?</h4>
+        <div class="options">
+            <label><input type="radio" name="q3"> Oui</label>
+            <label><input type="radio" name="q3"> Non</label>
+        </div>
+        <textarea placeholder="Pourquoi ?"></textarea>
+    </div>
+
+    <!-- QUESTION 4 -->
+    <div class="question hipo-block">
+        <h4>
+            4. Quelle barrière critique aurait dû empêcher ce scénario grave ?
+            <br><small>(ex : binômage, balisage, dispositif technique, procédure…)</small>
+        </h4>
+        <textarea></textarea>
+    </div>
+
+    <!-- QUESTION 5 -->
+    <div class="question hipo-block">
+        <h4>5. Avant action, le niveau de maîtrise du risque était :</h4>
+        <div class="options">
+            <label><input type="radio" name="q5"> Maîtrisé</label>
+            <label><input type="radio" name="q5"> Partiellement maîtrisé</label>
+            <label><input type="radio" name="q5"> Non maîtrisé</label>
+        </div>
+        <textarea placeholder="Remarque"></textarea>
+    </div>
+
+</fieldset>
+
+        </div>
+    </div>
+    <button class="next-button" onclick="redirectToPage()">Suivant</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <p> La <span style="font-weight:bold;"> méthodologie des 5 Pourquoi </span> est une technique simple et
+                efficace d’analyse des causes profondes d’un problème. Elle consiste à poser la question "Pourquoi
+                ?" de manière répétée (généralement cinq fois) jusqu’à remonter à la cause racine de l’incident ou
+                de la défaillance.
+                <span style="font-weight:bold;"> Objectif :</span> <br>
+                Identifier <span style="font-weight:bold;"> la vraie origine d’un problème </span> pour éviter de
+                traiter uniquement ses symptômes.
+                <span style="font-weight:bold;"> Principe : </span> <br>
+                À chaque réponse, on repose la question "Pourquoi ?", en se basant sur la réponse précédente.
+                Cela permet de <span style="font-weight:bold;"> creuser progressivement </span> jusqu’à la source du
+                problème.
+            </p>
+        </div>
+    </div>
+    <div id="myModalCause" class="modal">
+        <span class="close-cause">&times;</span>
+        <div class="modal-content">
+            <p> Suite à l’analyse, dressez la liste des causes profondes qui ont contribuées à la survenue de
+                l’événement. Les causes profondes sont les échecs fondamentaux qui, lorsqu’elles sont
+                correctement traitées, empêcheront la répétition de l’incident.
+            </p>
+        </div>
+
+
         <script src="analyse-cause.js"></script>
 </body>
 
