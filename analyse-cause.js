@@ -22,9 +22,8 @@ window.onload = function () {
 window.onload = function () {
      const hipo = localStorage.getItem('HIPO');
      const analyse_approfondie= document.getElementById("analyse_approfondie");
-    analyse_approfondie.style.display = 'none';
-    
-    if( hipo == 'true') {
+
+    if( hipo === 'true') {
         analyse_approfondie.style.display = 'block';
     }
     else
