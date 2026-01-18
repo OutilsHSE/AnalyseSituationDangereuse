@@ -95,6 +95,15 @@ const modal = document.getElementById("myModal");
 const btn = document.getElementById("openModalBtn");
 const closeBtn = document.querySelector(".close");
 
+// Ouvrir le modal
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+
+// Fermer quand on clique sur la croix
+closeBtn.onclick = function () {
+    modal.style.display = "none";
+}
 
 // Fermer quand on clique en dehors de l'image
 window.onclick = function (event) {
